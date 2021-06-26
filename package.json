@@ -1,5 +1,5 @@
 {
-  "name": "nlw_valoriza",
+  "name": "app-project-the-started",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "argel_095@hotmail.com",
   "license": "ISC",
   "devDependencies": {
     "@types/bcryptjs": "^2.4.2",
@@ -34,5 +34,6 @@
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.34",
     "uuid": "^8.3.2"
-  }
+  },
+  "repository": "https://github.com/ArgelCavallini/app-project-the-started.git"
 }
