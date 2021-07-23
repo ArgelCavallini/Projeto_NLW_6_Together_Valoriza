@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts",
-    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
+    "start": "node src/server.ts",
+    "typeorm": "node ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
   "author": "argel_095@hotmail.com",
@@ -30,6 +30,7 @@
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^8.5.1",
     "nodemailer": "^6.6.2",
+    "pg": "^8.6.0",
     "reflect-metadata": "^0.1.13",
     "sqlite3": "^5.0.2",
     "typeorm": "^0.2.34",
