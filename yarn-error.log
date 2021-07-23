@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add nodemon
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add Procfile
 
 PATH: 
   C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\argel\bin;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Python39\Scripts;C:\Python39;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\AMD\ATI.ACE\Core-Static;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\argel\AppData\Local\Android\Sdk\platform-tools;C:\Users\argel\AppData\Local\Android\Sdk\emulator;C:\Users\argel\AppData\Local\Android\Sdk\tools;C:\Users\argel\AppData\Local\Android\Sdk\build-tools;C:\Program Files\nodejs;C:\Program Files\OpenJDK\openjdk-8u275-b01\bin;C:\ProgramData\ComposerSetup\bin;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Program Files\TortoiseGit\bin;C:\Program Files (x86)\dotnet;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PuTTY;C:\Users\argel\AppData\Local\Microsoft\WindowsApp;.;C:\Users\argel\AppData\Local\Programs\Microsoft VS Code\bi;.;C:\Users\argel\AppData\Local\Yarn\bi;.;C:\Users\argel\go\bi;.;C:\Users\argel\AppData\Roaming\np;.;C:\xampp\php;C:\Users\argel\AppData\Roaming\Composer\vendor\bin;C:\Users\argel\.dotnet\tools;C:\Users\argel\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\heroku\bin
@@ -14,12 +14,17 @@ Platform:
   win32 x64
 
 Trace: 
-  SyntaxError: C:\Fontes\projetos_node\nlw_valoriza\package.json: Unexpected token } in JSON at position 259
-      at JSON.parse (<anonymous>)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
-      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+  Error: https://registry.yarnpkg.com/Procfile: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (node:events:376:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (node:events:376:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (node:events:482:28)
+      at IncomingMessage.emit (node:events:388:22)
+      at endReadableNT (node:internal/streams/readable:1294:12)
+      at processTicksAndRejections (node:internal/process/task_queues:80:21)
 
 npm manifest: 
   {
@@ -30,7 +35,7 @@ npm manifest:
     "scripts": {
       "dev": "ts-node-dev src/server.ts",
       "start": "nodemon src/server.ts",
-      "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
+      "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
     },
     "keywords": [],
     "author": "argel_095@hotmail.com",
