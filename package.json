@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server.ts",
-    "typeorm": "node ./node_modules/typeorm/cli.js"
+    "dev": "ts-node-dev src/server.ts",
+    "start": "nodemon src/server.ts",
+    "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js"
   },
   "keywords": [],
   "author": "argel_095@hotmail.com",
