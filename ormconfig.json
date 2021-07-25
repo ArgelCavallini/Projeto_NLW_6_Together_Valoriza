@@ -5,10 +5,11 @@
    "username": "ndnfofkhwrewtv",
    "password": "8e8533c96f35c62dd67f8045da81f749d5918ff6288e9d29ff3772c627de232b",
    "database": "d5co6afcp389r7",
-   "migrations": ["src/database/migrations/*.ts"],
-   "entities":["src/entities/*.ts"],
+   "migrations": ["./src/shared/infra/typeorm/migrations/*.ts"],
+   "entities": ["./src/modules/**/infra/typeorm/entities/**/*.ts"],
+   "seeds": ["./src/shared/**/infra/typeorm/seeds/*.ts"],
    "cli":{
-     "migrationsDir": "src/database/migrations",
-     "entitiesDir": "src/entities"
-   }
+     "migrationsDir": "./src/shared/infra/typeorm/migrations"
+   },
+   "logging": false
 }
