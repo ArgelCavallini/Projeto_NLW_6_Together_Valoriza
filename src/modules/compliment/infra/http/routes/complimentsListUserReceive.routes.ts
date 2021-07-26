@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
-import { ListUserReceiveComplimentsController } from "../http/controllers/ListUserReceiveComplimentsController";
-import { ensureAthenticated } from "../../../../middlewares/ensureAthenticated";
+import { ListUserReceiveComplimentsController } from "../controllers/ListUserReceiveComplimentsController";
+import { ensureAthenticated } from "../../../../../middlewares/ensureAthenticated";
 
 const router = Router();
 
