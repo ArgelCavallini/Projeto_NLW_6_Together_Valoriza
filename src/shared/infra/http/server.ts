@@ -12,7 +12,7 @@ import "express-async-errors";
 import uploadConfig from '../../../config/upload';
 import routes from "./routes";
 
-import '@shared/infra/typeorm';
+import '../../infra/typeorm';
 //import '@shared/container';
 //import '@shared/infra/crons';
 
