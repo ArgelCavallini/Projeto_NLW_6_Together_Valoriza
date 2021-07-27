@@ -26,7 +26,7 @@ if (process.env.NODE_ENV !== 'development') {
 
 app.use(
   cors({
-    origin: [process.env.APP_WEB_URL, process.env.SITE_WEB_URL],
+    //origin: [process.env.APP_WEB_URL, process.env.SITE_WEB_URL],
     allowedHeaders: ['Authorization', 'Accept', 'Content-Type', 'Origin', 'Access-Control-Allow-Origin'],
     methods: ['GET', 'PUT', 'PATCH', 'POST', 'DELETE', 'OPTIONS'],
   }),
