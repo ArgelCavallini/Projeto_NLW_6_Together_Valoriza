@@ -13,8 +13,8 @@ const listUserController = new ListUserController();
 const authenticateUserController = new AuthenticateUserController();
 
 
-router.post("/users", createUserController.handle);
-router.get("/users/", ensureAthenticated,listUserController.handle);
+router.post("/create", createUserController.handle);
+router.get("/list", ensureAthenticated,listUserController.handle);
 router.post("/login", authenticateUserController.handle);
 
 export default router;
