@@ -9,7 +9,7 @@ import path from 'path';
 import "express-async-errors";
 
 //import sentryConfig from '@config/sentry';
-import uploadConfig from '@config/upload';
+import uploadConfig from '../../../config/upload';
 import routes from "./routes";
 
 import '@shared/infra/typeorm';

@@ -34,11 +34,10 @@
         "shared/*"
       ]
     },
-    //"strict": false,
-    //"strictPropertyInitialization": false,
+    "strict": false,
+    "strictPropertyInitialization": false,
   },
   "include": [
-    "src/**/*",
-    "node_modules/@types/puppeteer/index.d.ts"
+    "src/**/*"
   ]
 }
